@@ -12,18 +12,26 @@ public class Library {
         this.capacity = capacity;
     }
 
-    public int getbooksSize() {
+    public int getStockSize() {
         return this.stock.size();
     }
 
 
     public void addBook(Book book) {
-        if (getbooksSize() < this.capacity) {
-
+        if (getStockSize() < this.capacity) {
             this.stock.add(book);
         }
+    }
+
+
+
+
+
+
+    public void bookLent(Borrower borrower) {
+        this.stock.remove(borrower.rentBook());
+    }
+
 
 
     }
-
-}
