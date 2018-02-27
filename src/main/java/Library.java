@@ -26,12 +26,12 @@ public class Library {
 
 
 
-
-
-    public void bookLent(Borrower borrower) {
-        this.stock.remove(borrower.rentBook());
-    }
-
+//
+//
+//    public void bookLent(Borrower borrower) {
+//        this.stock.remove(borrower.rentBook());
+//    }
+//
 
 
     }
