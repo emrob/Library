@@ -1,4 +1,3 @@
-import java.awt.print.Book;
 import java.util.ArrayList;
 
 public class Library {
@@ -26,12 +25,17 @@ public class Library {
 
 
 
-//
-//
-//    public void bookLent(Borrower borrower) {
-//        this.stock.remove(borrower.rentBook());
-//    }
-//
+
+
+    public void bookLent(Borrower borrower, Book book) {
+//        this.stock.remove(borrower.rentBook(book));
+         borrower.rentBook(book);
+         this.stock.remove(book);
+       
+       
+       
+    }                                       
+
 
 
     }

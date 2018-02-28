@@ -1,4 +1,4 @@
-public class Book extends java.awt.print.Book {
+public class Book {
     private String name;
     private BookGenre genre;
 

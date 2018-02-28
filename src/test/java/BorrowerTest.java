@@ -14,10 +14,10 @@ public class BorrowerTest {
         book = new Book("Brave new world", BookGenre.THRILLER);
     }
 
-    @Test
-    public void testRentBook(){
-        borrower.rentBook(book);
-        assertEquals(1, borrower.getBookCount());
-    }
+//    @Test
+//    public void testRentBook(){
+//        borrower.rentBook(book);
+//        assertEquals(1, borrower.getBookCount());
+//    }
 
 }
