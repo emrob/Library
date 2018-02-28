@@ -39,13 +39,13 @@ public class LibraryTest {
             assertEquals(1, library.getStockSize());
 
     }
-//
-//    @Test
-//    public void canLendBook(){
-//        library.bookLent(borrower);
-//        assertEquals(0, library.getStockSize());
-//        assertEquals(1, borrower.getBookCount());
-//    }
+
+    @Test
+    public void canLendBook(){
+        library.bookLent(borrower, book);
+        assertEquals(2, borrower.getBookCount());
+        assertEquals(0, library.getStockSize());
+    }
 
 
 
